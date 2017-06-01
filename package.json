@@ -1,0 +1,29 @@
+{
+  "name": "malta-mocha",
+  "version": "1.0.0",
+  "description": "malta plugin to run mocha tests at build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedeghe/malta-mocha.git"
+  },
+  "keywords": [
+    "malta",
+    "malta plugin",
+    "malta mocha",
+    "malta mocha plugin"
+  ],
+  "author": "Federico Ghedina <federico.ghedina@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fedeghe/malta-mocha/issues"
+  },
+  "dependencies": {
+    "malta": ">=3.4.0",
+    "mocha": "^3.4.2"
+  },
+  "homepage": "https://github.com/fedeghe/malta-mocha#readme"
+}
