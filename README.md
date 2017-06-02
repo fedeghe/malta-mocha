@@ -7,13 +7,14 @@
 
 This plugin can be used on: **.js** files and even on **.coffee** and **.ts** files after using the right plugin  
 
-The plugin will run mocha on all test/*.js files found relative to the template path.  
+The plugin, if no options are passed, will run mocha on all test/*.js files found relative to the template path.  
 
-Options : no options  
+Options : 
+    - **dir** : a path relative to execution folder meant to contain all tests _mocha_ is supposed to run.  
 
 Sample usage:  
 ```
-malta app/script/main.js public/js -plugins=malta-mocha
+malta app/script/main.js public/js -plugins=malta-mocha[dir:\"app/test\"]
 ```
 or in the .json file :
 ```
