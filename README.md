@@ -35,4 +35,3 @@ Malta.get().check([
         console.log('=========');
     });
 ```
- 
