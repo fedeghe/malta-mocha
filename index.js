@@ -11,12 +11,13 @@ function malta_mocha(o, options) {
 	var self = this,
 		start = new Date(),
 		msg,
+		inDir = path.dirname(self.tplPath),
 		pluginName = path.basename(path.dirname(__filename)),
 		i;
 
 	return function (solve, reject){
 		try {
-			var ls = child_process.spawn('mocha'),
+			var ls = child_process.spawn('mocha', [inDir + '/test']),
 				outmsg = ["\n" + 'plugin ' + pluginName.white() + "\n"];
 
 		    ls.stdout.on('data', function(m) {
