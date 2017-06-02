@@ -7,7 +7,7 @@
 
 This plugin can be used on: **.js** files and even on **.coffee** and **.ts** files after using the right plugin  
 
-The plugin will run mocha on all test/*.js files.
+The plugin will run mocha on all test/*.js files found relative to the template path.  
 
 Options : no options  
 
@@ -34,4 +34,3 @@ Malta.get().check([
         console.log('=========');
     });
 ```
- No newline at end of file
