@@ -16,11 +16,11 @@ Sample usage:
 ```
 malta app/script/main.js public/js -plugins=malta-mocha[dir:\"app/test\"]
 ```
-or in the .json file :
+or in the .json file :  
 ```
 "app/script/main.js" : "public/js -plugins=malta-mocha"
 ```
-or in a script : 
+or in a script :  
 ``` js
 var Malta = require('malta');
 Malta.get().check([
@@ -35,3 +35,4 @@ Malta.get().check([
         console.log('=========');
     });
 ```
+
