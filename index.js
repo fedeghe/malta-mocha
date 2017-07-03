@@ -13,17 +13,12 @@ function malta_mocha(o, options) {
 		msg,
 		execDir = self.execDir,
 		inDir = path.dirname(self.tplPath),
-		pluginName = path.basename(path.dirname(__filename)),
-		dir = 'dir' in options ?
-			(execDir + '/' + options.dir)
-			:
-			(inDir + '/test');
+		pluginName = path.basename(path.dirname(__filename));
 
 	return function (solve, reject){
 		try {
-			var ls = child_process.spawn('mocha', [dir]),
+			var ls = child_process.spawn('mocha'),
 				outmsg = ["\n" + 'plugin ' + pluginName.white() + "\n"];
-
 			ls.stderr.on('data', function(err) {
 				console.log("ERROR".red());
 				msg = 'plugin ' + pluginName.white() + ' compilation error';
@@ -42,6 +37,7 @@ function malta_mocha(o, options) {
 				solve(o);
 				self.notifyAndUnlock(start, msg);
 			});
+
 		} catch (err) {
 			self.doErr(err, o, pluginName);
 		}
