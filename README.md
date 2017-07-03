@@ -7,7 +7,7 @@
 
 This plugin can be used on: **.js** files and even on **.coffee** and **.ts** files after using the right plugin  
 
-The plugin, if no options are passed, will run mocha on all test/*.js files found relative to the template path.  
+The plugin will run mocha on the testfolder found in the execution path.  
 
 
 
