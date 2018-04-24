@@ -1,6 +1,6 @@
 {
   "name": "malta-mocha",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "malta plugin to run mocha tests at build",
   "main": "index.js",
   "scripts": {
@@ -22,8 +22,8 @@
     "url": "https://github.com/fedeghe/malta-mocha/issues"
   },
   "dependencies": {
-    "malta": ">=3.4.0",
-    "mocha": "^3.4.2"
+    "malta": ">=3.8.3",
+    "mocha": "^5.1.1"
   },
   "homepage": "https://github.com/fedeghe/malta-mocha#readme"
 }
