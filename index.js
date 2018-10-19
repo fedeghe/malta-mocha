@@ -1,7 +1,6 @@
 require('malta').checkDeps('mocha');
 
 var path = require('path'),
-	fs = require('fs'),
 	child_process = require('child_process');
 
 function malta_mocha(o, options) {
