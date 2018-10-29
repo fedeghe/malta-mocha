@@ -13,6 +13,8 @@ function malta_mocha(o, options) {
 		execDir = self.execDir,
 		inDir = path.dirname(self.tplPath),
 		pluginName = path.basename(path.dirname(__filename));
+	
+	process.chdir(execDir);
 
 	return function (solve, reject){
 		try {
