@@ -24,7 +24,8 @@ function malta_mocha(o, options) {
 				console.log("ERROR".red());
 				msg = 'plugin ' + pluginName.white() + ' compilation error';
 				console.log((err+"").white());
-				solve(o);
+                // solve(o);
+                reject(`ERROR: some tests are failing\nplugin ${pluginName}: SOME TESTS ARE FAILING`);
 				self.notifyAndUnlock(start, msg);
 			});
 			ls.stdout.on('data', function(m) {
