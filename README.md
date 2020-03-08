@@ -1,6 +1,5 @@
 ---
 [![npm version](https://badge.fury.io/js/malta-mocha.svg)](http://badge.fury.io/js/malta-mocha)
-[![Dependencies](https://david-dm.org/fedeghe/malta-mocha.svg)](https://david-dm.org/fedeghe/malta-mocha)
 [![npm downloads](https://img.shields.io/npm/dt/malta-mocha.svg)](https://npmjs.org/package/malta-mocha)
 [![npm downloads](https://img.shields.io/npm/dm/malta-mocha.svg)](https://npmjs.org/package/malta-mocha)  
 ---  
