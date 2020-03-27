@@ -22,7 +22,7 @@
         "url": "https://github.com/fedeghe/malta-mocha/issues"
     },
     "dependencies": {
-        "mocha": "7.1.0"
+        "mocha": "7.1.1"
     },
     "homepage": "https://github.com/fedeghe/malta-mocha#readme"
 }
