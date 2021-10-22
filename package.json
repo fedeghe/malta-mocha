@@ -1,6 +1,6 @@
 {
     "name": "malta-mocha",
-    "version": "1.0.17",
+    "version": "1.0.18",
     "description": "malta plugin to run mocha tests at build",
     "main": "index.js",
     "scripts": {
